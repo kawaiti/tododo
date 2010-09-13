@@ -1,6 +1,16 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.0.0'
+gem 'mongoid', '2.0.0.beta.17'
+gem 'bson_ext', '1.0.4'
+gem 'devise'
+gem 'hpricot'
+gem 'ruby_parser'
+gem 'jquery-rails'
+gem 'haml'
+gem 'haml-rails'
+gem 'rspec', '2.0.0.beta.22'
+gem 'rspec-rails', '>= 2.0.0.beta.22'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
