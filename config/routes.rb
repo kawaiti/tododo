@@ -1,4 +1,8 @@
 Tododo::Application.routes.draw do
+  resources :todos
+
+  get "top/index"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
