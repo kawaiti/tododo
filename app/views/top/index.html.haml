@@ -1,1 +1,10 @@
 = text_field_tag :todo
+= observe_field :todo, :url => new_todo_url, :update => :todos
+:javascript
+  jQuery(function($) {
+    $("#todo").change(function () {
+      $.post("#{new_todo_url}", function(data) {
+        $("#todos").html(data):
+      });
+    });
+  })

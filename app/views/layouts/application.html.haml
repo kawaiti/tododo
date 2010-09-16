@@ -1,0 +1,21 @@
+!!!
+%html
+  %head
+    %title
+      = t(:tododo)
+    %meta{ 'http-equiv' => 'content', :content => 'text/html; charset=utf-8'}
+    = stylesheet_link_tag :all
+    = javascript_include_tag :defaults
+    = csrf_meta_tag
+  %body
+    %div#wrapper
+      %div#header
+        %div#top_menu
+        %div#top_menu2
+      %div#menu
+      %div#contents_container
+        %div#navi
+        %div#sub_navi
+        %div#contents
+          = yield
+      %div#footer
